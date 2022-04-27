@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {background-color: powderblue;}
+        h1   {color: blueviolet;font-family: "Helvetica Neue",sans-serif;}
+        p    {color:blueviolet;font-family:"Helvetica Neue",sans-serif;}
+        label {color:blueviolet;font-family: "Helvetica Neue",sans-serif;}
+        </style>
+    <title>Polling System</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Voting</h1>
+        <p>Please vote on your preffered class timing</p>
+        <form id="vote-form">
+        
+            <input type="radio" name="os" id="after" value="After">
+            <label for="after">After 5pm</label>
+            <br>
+            <input type="radio" name="os" id="before" value="Before">
+            <label for="before">Before 5pm</label>
+            <br>
+            <input type="submit" value="Vote" class="btn">            
+        </form>
+        <br>
+        <br>
+        <h5 style="text-align: center" id="chartTitle"></h5>
+        <div id="chartContainer" style="height:250px;width:100%"></div>
+    </div>
+
+    <script 
+        src="https://cdnjs.cloudflare.com/ajax/libs/pusher/7.1.0-beta/pusher.min.js" 
+        integrity="sha512-ip+AkQVjdc/LkqydhtKwtDoguZusmE5wTMCZPFov/+t4nQyFb6ahAmXg4dNKBEgYIB4uZ04JI7i4RN3E5uJ1Cw==" 
+        crossorigin="anonymous" 
+        referrerpolicy="no-referrer">
+    </script>
+    <script 
+        src="https://cdnjs.cloudflare.com/ajax/libs/canvasjs/1.7.0/canvasjs.min.js" 
+        integrity="sha512-FJ2OYvUIXUqCcPf1stu+oTBlhn54W0UisZB/TNrZaVMHHhYvLBV9jMbvJYtvDe5x/WVaoXZ6KB+Uqe5hT2vlyA==" 
+        crossorigin="anonymous" 
+        referrerpolicy="no-referrer">
+    </script>
+    <script src="main.js"></script>
+</body>
+</html>
