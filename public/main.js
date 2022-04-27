@@ -54,7 +54,7 @@ fetch("http://localhost:4000/polling")
             chart.render();
 
     Pusher.logToConsole = true;
-    var pusher = new Pusher('413b3ab19b7602c1f745', {
+    var pusher = new Pusher(' ', { //Pusher secret key
       cluster: 'ap2'
     });
 
