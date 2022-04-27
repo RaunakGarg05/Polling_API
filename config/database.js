@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 
 mongoose.Promise = global.Promise;
 mongoose.connect(
-    'mongodb+srv://Raunak:QnxTw9QqkWVzPWoP@cluster0.ahcow.mongodb.net/poll?retryWrites=true&w=majority')
+    ' ') //mongodb_key
     .then(() => {
         console.log('MongoDb Connected!!');
     })
